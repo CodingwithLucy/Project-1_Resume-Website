@@ -16,6 +16,39 @@
 </head>
 
 <body>
+  <section>
+    <div id="main-background">
+      <div class="topnav" id="myTopnav">
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skills & Prof</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="main">
+        <h1>John Anonim</h1>
+        <h2 id="h2">PhD in Physics</h2>
+        <button class="button">
+          <a href="#contact">Reach out</a>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </section>
 </body>
 
 </html>
